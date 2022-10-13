@@ -3,8 +3,9 @@
       <div class="segundo">
         <b-container class="formcontent" fluid>
           <div class="fadein">
+            
             <h1> INICIAR SESION </h1>
-  
+             
             <b-img class="icon" :src="require('@/assets/lgtb.png')" fluid></b-img>
           </div>
   
@@ -35,7 +36,7 @@
             <b-button @click="Ingresar()" variant="outline-primary">ENTRAR</b-button>
           </div>
           <div class="link">
-            <b-link href="">¿No tienes cuenta? Registrate</b-link>
+            <b-link href="Registro">¿No tienes cuenta? Registrate</b-link>
           </div>
   
   
@@ -46,6 +47,7 @@
   
   
   </template>
+  
   <script>
     import axios from 'axios'
       export default{
@@ -61,19 +63,28 @@
       },
       components:{},
       methods:{
+        
          Ingresar()
          {
-            this.axios.get('',this.user).then(response=>{
-
+            this.axios.get('http://127.0.0.1:8000/api/user_login',this.user).then(response=>{
+              this.$router.push("/Dashboard");
+             // this.user=response.data
+              
+             
+              
+              
             })
-            this.$router.push('/Dashboard')
+           /* 
+              console.log(data) 
+           alert("Ingreso correctamente")*/
          }
       },
       computed:{},
       mounted:function(){
         this.Ingresar()
       }
-      } 
+    }
+
           
   </script>
   

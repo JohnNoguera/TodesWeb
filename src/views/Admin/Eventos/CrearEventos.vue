@@ -1,19 +1,25 @@
 <template>
     <div>
        Estoy en Eventos
-      <Siderbar>
-
-      </Siderbar>
+   <nav>
+   </nav>
+      <siderbar>
+      </siderbar>
     </div>
     
 </template>
 <script>
     import axios from 'axios'
-import Siderbar from '../../../components/Siderbar.vue'  
+    import nav from '../../../components/NavAdmin.vue' 
+import siderbar from '../../../components/Siderbar.vue'  
     export default{
       name:'',
       data(){},
-      components:{ Siderbar },
+      components:{ 
+        nav,
+        siderbar
+         
+    },
       methods:{
          CrearEvento()
          {

@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Registro from '../views/Registro.vue'
-import Login from '../views/Login.vue'
+
+import Registro from '../views/Registro'
+import Login from '../views/Login'
 import Dashboard from '../views/Admin/Dashboard.vue'
 
 import CrearEventos from '../views/Admin/Eventos/CrearEventos.vue'

@@ -13,7 +13,7 @@
                    <a></a>         
                </li>
                <li>
-                    <router-link to="/MostrarEventos">Eventos</router-link>
+                    <router-link to="/CrearEventos">Eventos</router-link>
                     <a></a>
                </li>
                <li>
